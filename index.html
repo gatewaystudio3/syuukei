@@ -353,7 +353,7 @@
        機能1：スタジオ集計システム のスクリプト
        ========================================== */
     // カウント対象のすべての文字キー
-    const allChars = ['b', '1', '2', 'p', 'g', 'w', 's', '3', '0', 'd', 'c'];
+    const allChars = ['b', '1', '2', 'p', 'g', 's', 'y', '3', '0', 'd', 'c'];
 
     function aggregate() {
         const inputStr = document.getElementById('inputString').value;
@@ -376,8 +376,8 @@
         document.getElementById('cell-kojin2').value = counts['2'];
         document.getElementById('cell-pack').value = counts['p'];
         document.getElementById('cell-gakuwari').value = counts['g'];
-        document.getElementById('cell-staff').value = counts['w'];
-        document.getElementById('cell-shokai').value = counts['s'];
+        document.getElementById('cell-staff').value = counts['s'];
+        document.getElementById('cell-shokai').value = counts['y'];
 
         // 2. ポイントの集計と反映
         const ptCount = counts['3'] + counts['0'];
